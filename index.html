@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Javascript Quiz</title>
+
+    <!---- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body style="background-color: #f2f2f2;">
+
+    <!--- header -->
+    <header class="text-center pt-1 pb-4 my-3">
+        <h1>Javascript Quiz</h1>
+    </header>
+
+    <!--- quiz -->
+    <div class="container_1">
+        <div class="row">
+            <div class="col-md-2">
+                <button type="button" class="btn btn-light ml-5" id="timer">
+                    Timer
+                </button>
+            </div>
+            <div class="wrapper shadow text-center px-4 col-md-6" style="background-color: #ffffff;">
+                <div class="row">
+                    <div class="col-md-12">
+                        <form id="cover">
+                            <p class="title px-5">Are you ready to take the challenge?</p>
+                            <p>(Please note you only have 60 seconds)</p>
+                            <div class="form-group text-center">
+                                <button id="confirm" type="button" class="btn btn-danger">
+                                    Let's Started!
+                                </button>
+                            </div>
+                        </form>
+                        <div id="quiz" style="display: none;" class="pb-3">
+                            <div>
+                                <p id="question">
+                                    question
+                                </p>
+                            </div>
+                            <button type="button" class="choice btn btn-outline-secondary btn-sm" id="A">A</button>
+                            <button type="button" class="choice btn btn-outline-secondary btn-sm" id="B">B</button>
+                            <button type="button" class="choice btn btn-outline-secondary btn-sm" id="C">C</button>
+                            <button type="button" class="choice btn btn-outline-secondary btn-sm" id="D">D</button>
+                        </div>
+                        <hr>
+                        <div id="comment" style="display: none;" class="pb-3">
+                            <p>
+                                Awesome!
+                            </p>
+                        </div>
+                        <form id="lastPage" style="display: none" class="pb-3">
+                            <div id="finalPage" class="pb-3">
+                            </div>
+                            <div class="form-group" id="registered">
+                                <input class="form-control" id="name" placeholder="Enter your name"/>
+                            </div>
+                            <button type="button" class="choice btn btn-outline-warning btn-sm" id="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 text-right">
+                <a role="button" class="btn btn-light mr-5" id="scorebtn" href="score.html">
+                    Score
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!---- javascript --->
+    <script src="javascript.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+/*---- header ----*/
+header {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* --- pw generater ---- */
+.wrapper {
+    border: solid 1px #d0d0e1;
+    border-radius: 8px;
+    margin: 0 auto;
+    max-width: 60%;
+    padding: 20px 20px 0px 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.title {
+    font-size: 23px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+textarea {
+    border: 1px dashed #cccccc;
+    border-radius: 5px;
+}
+#question {
+    font-size: x-large;
+}
