@@ -56,7 +56,6 @@ var timeLeft = 60;
 let TIMER;
 var name = "";
 
-
 // button clicked quiz started
 start.addEventListener("click", runQuiz);
 
@@ -148,7 +147,7 @@ function quizEnd() {
 
 function storeName(event) {
     event.preventDefault();
-    
+
     var initialInput = document.querySelector("#initial");
 
     var userInput = {
@@ -161,7 +160,7 @@ function storeName(event) {
 
     localStorage.setItem("user", JSON.stringify(userInput));
 
-    window.location.href = "score.html";
+    window.location.href = "score.html"; 
 
 }
 
